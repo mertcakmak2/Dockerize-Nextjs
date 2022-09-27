@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+
+  front-app:
+    container_name: front-app
+    build: .
+    image: front-app
+    ports:
+      - 3000:3000
+    volumes:
+      - ./target:/usr
